@@ -141,6 +141,14 @@ $ nohup jupyter lab --port=8000 --NotebookApp.token='替换为你的密码' --no
 
 Jupyter Lab 输出的日志将会保存在 `nohup.out` 文件（已在 .gitignore中过滤）。
 
+###  切换HF国内镜像
+1. https://hf-mirror.com/ 用于镜像 huggingface.co
+2. 详细参考：https://hf-mirror.com/
+
+```shell
+pip install -U huggingface_hub
+export HF_ENDPOINT=https://hf-mirror.com
+```
 
 ### 关于 LangChain 调用 OpenAI GPT API 的配置
 
